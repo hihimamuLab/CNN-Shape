@@ -14,7 +14,8 @@ layout = [
     [sg.Text("フィルター縦幅"),sg.InputText(key="-filter_h-")],
     [sg.Text("フィルター横幅"),sg.InputText(key="-filter_w-")],
     [sg.Text("ストライド"),sg.InputText(key="-stride-")],
-    [sg.Button("実行",key="-submit-")]
+    [sg.Button("実行",key="-submit-")],
+    [sg.Output(size=(50,10),key="-OUTPUT-")]
 ]
 
 window = sg.Window('CNNの出力画像サイズを算出',layout,size=(600,300))
