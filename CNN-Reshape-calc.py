@@ -33,7 +33,7 @@ while True:
         stride = int(values["-stride-"])
         
         Oh,Ow = conv_output_size(input_size_h,input_size_w,padding_size,filter_h,filter_w,stride)
-        
+        window["-OUTPUT-"].update("")
         print(f"出力画像横幅{int(Ow)}")
         print(f"出力画像縦幅{int(Oh)}")
     if event == sg.WIN_CLOSED:
